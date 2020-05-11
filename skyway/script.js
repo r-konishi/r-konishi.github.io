@@ -1,5 +1,3 @@
-window.__SKYWAY_KEY__ = '34312ad3-192c-4abe-b89e-16f01df00ac3';
-
 const Peer = window.Peer;
 
 (async function main() {
