@@ -25,7 +25,7 @@ video {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 980px;
+  width: 960px;
 }
 
 /* p2p-media styles */
@@ -60,7 +60,8 @@ video {
 /* room */
 .room {
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  /* grid-template-columns: 30% 40% 30%; */
+  grid-template-columns: 80% 20%;
   gap: 8px;
   margin: 0 8px;
 }
@@ -74,4 +75,28 @@ video {
   min-height: 100px;
   padding: 8px;
   margin-top: 0;
+}
+
+/* add r-konishi */
+.preview-video {
+  width: 640px;
+}
+video#js-local-stream {
+  height: 480px;
+  width: 640px;
+}
+
+#js-remote-streams {
+  width: 320px;
+}
+
+#js-remote-streams > video {
+  height: 120px;
+  width: 160px;
+}
+
+.messages {
+  height: 120px;
+  width: 100%;
+  overflow-x: auto;
 }
