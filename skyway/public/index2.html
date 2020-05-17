@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="body-container">
+            <div class="live-container">
+                <iframe width="896" height="504" src="https://www.youtube.com/embed/_ZRp7KYXM1A" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="live-title-box">
+                    <div class="live-title">
+                        ↑ 仮で YouTube の 「#StayHome #GWも家で一緒に」
+                    </div>
+                    <div class="chat-room-name-input-box">
+                        <input type="text" placeholder="参加する部屋名" id="js-room-id">
+                        <button id="js-join-trigger">参加</button>
+                        <button id="js-leave-trigger" disabled>退出</button>
+                    </div>
+                </div>
+                <div class="noname-box">
+                    <div></div>
+                    <div class="my-video-container">
+                        <div id="js-username" class="my-user-name-box"></div>
+                        <div class="my-video-box">
+                            <video id="js-local-stream"></video>
+                        </div>
+                        <div class="my-device-box">
+                            <button id="video-toggle">映像</button>
+                            <button id="audio-toggle">音声</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-container">
+                <div id="js-remote-streams" class="chat-room-viwer-container">
+                    <!-- <div class="receive-video-box">
+                        <video src=""></video>
+                    </div>
+                    <div class="receive-video-box">
+                        <video src=""></video>
+                    </div>
+                    <div class="receive-video-box">
+                        <video src=""></video>
+                    </div>
+                    <div class="receive-video-box">
+                        <video src=""></video>
+                    </div>
+                    <div class="receive-video-box">
+                        <video src=""></video>
+                    </div>
+                    <div class="receive-video-box">
+                        <video src=""></video>
+                    </div>
+                    <div class="receive-video-box">
+                        <video src=""></video>
+                    </div>
+                    <div class="receive-video-box">
+                        <video src=""></video>
+                    </div>
+                    <div class="receive-video-box">
+                        <video src=""></video>
+                    </div> -->
+                </div>
+                <div class="text-chat-container">
+                    <div id="joined-room" class="room-name">部屋に参加していません。</div>
+                    <div id="js-messages" class="text-chat-box">
+                        <!-- <div class="message-box">
+                            <div class="message-top-box">
+                                <div class="message-name">発言した人の名前</div>
+                                <div class="message-time">2020/01/31 24:59:59</div>
+                            </div>
+                            <div class="message-body-box">
+                                <pre class="message">メッセージはこんな感じで表示されるけど改行とかなる場合はどうなるんだろうか。。。。メッセージはこんな感じで表示されるけど改行とかなる場合はどうなるんだろうか。。。。</pre>
+                            </div>
+                        </div>
+                        <hr> -->
+                    </div>
+                    <div class="text-chat-input-box">
+                        <input type="text" id="js-local-text">
+                        <button id="js-send-trigger">SEND</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+    <script src="./key.js"></script>
+    <script src="./script2.js"></script>
+</body>
+
+</html>

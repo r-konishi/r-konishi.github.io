@@ -1,0 +1,182 @@
+/* normalize */
+body { margin: 0; }
+
+pre {
+    margin: 0;
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: pre-wrap;      /* CSS3 */
+    word-wrap: break-word;      /* IE 5.5+ */
+}
+
+div {
+    display: flex;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1376px;
+}
+
+.body-container {
+    display: grid;
+    grid-template-columns: 896px 480px;
+}
+
+/* 画面左 */
+.live-container {
+    display: grid;
+    /* width: 896px; */
+}
+
+/* タイトルとチャットルーム参加に関する情報 */
+.live-title-box {
+    display: grid;
+    grid-template-columns: 636px 260px;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+.live-title {
+    font-size: 24px;
+}
+
+.chat-room-name-input-box {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+}
+
+.chat-room-name-input-box > input {
+    border-radius:20px;
+    padding: 2px 10px;
+}
+
+.chat-room-name-input-box > button {
+    display: block;
+    font-size: 12px;
+    border-radius:15px;
+    margin: 2px 2px;
+}
+
+/* 画面左下部 */
+.noname-box {
+    display: grid;
+    grid-template-columns: 636px 260px;
+}
+
+.my-video-container {
+    display: grid;
+    grid-template-rows: 30px 195px 25px;
+}
+
+.my-device-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+.my-device-box > button {
+    display: inline-block;
+    /* width: 40px; */
+    border-radius:10px;
+    margin: 2px 10px;
+}
+
+#js-local-stream  {
+    width: 260px;
+    height: 195px;
+    background-color: #000000;
+}
+
+/* 画面右 */
+.chat-container {
+    display: grid;
+    grid-template-rows: 360px 456px;
+}
+
+.chat-room-viwer-container {
+    display: grid;
+    grid-template-columns: 160px 160px 160px;
+    grid-template-rows: 120px 120px 120px;
+    background-color: #000000;
+}
+
+.receive-video-box {
+    display: grid;
+    background-color: #000000;
+}
+
+.receive-video-box > video {
+    width: 160px;
+    height: 120px;
+}
+
+.text-chat-container {
+    display: block;
+}
+
+.room-name {
+    display: block;
+    height: 40px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-chat-box {
+    display: block;
+    height: 366px;
+    /* width: 100%; */
+    border: 1px solid #000000;
+    overflow-y: scroll;
+}
+
+.message-box {
+    display: block;
+    width: 100%;
+    padding: 2px 0;
+}
+
+.message-top-box {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.message-name {
+    font-size: 14px;
+    padding: 2px 10px;
+}
+
+.message-time {
+    display: contents;
+    font-size: 8px;
+}
+
+.message-body-box {
+    display: block;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.text-chat-input-box {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 40px;
+    width: 100%;
+    padding: 3px 5px;
+}
+
+.text-chat-input-box > input {
+    font-size: 24px;
+    border-radius:30px;
+    box-shadow: none;
+    padding: 2px 12px;
+}
+
+.text-chat-input-box > button {
+    font-size: 18px;
+    border-radius:30px;
+}
